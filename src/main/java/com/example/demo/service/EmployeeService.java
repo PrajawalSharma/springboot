@@ -10,8 +10,11 @@ import org.springframework.stereotype.Service;
 import com.example.demo.DTO.LoginDTO;
 import com.example.demo.Entity.Add;
 import com.example.demo.Entity.Employee;
+import com.example.demo.Response.EmployeeResponse;
+import com.example.demo.Response.LoginResponse;
 import com.example.demo.repository.AddRepository;
 import com.example.demo.repository.EmployeeRepository;
+
 
 @Service
 public class EmployeeService {
@@ -22,26 +25,26 @@ public class EmployeeService {
 	@Autowired
 	private AddRepository addrepository;
 	
-	public String saveAdmin(Employee employee) {
+	public EmployeeResponse saveAdmin(Employee employee) {
 		repository.save(employee);
-		return "Test Employee saved..";
+		return new EmployeeResponse("New Employee Added Successfully", true);
 	}
 	
 	
-	public String saveEmployee(Add add) {
+	public EmployeeResponse saveEmployee(Add add) {
 		System.out.print(add);
 		addrepository.save(add);
-		return "New Employee added..";
+		return new EmployeeResponse("New Employee Added Successfully", true);
 	}
 	
-	public String loginCheck(LoginDTO login) {
+	public LoginResponse loginCheck(LoginDTO login) {
 		Employee emp = repository.findByEmail(login.getEmail());
 		System.out.println(emp);
 		if(emp.getPassword().equals(login.getPassword())) {
-		return "Login Sucessful";
+		return new LoginResponse("Login Success", true);
 		}
 		else {
-			return "Invalid login";
+			return new LoginResponse("Login failed", true);
 		}
 	}
 	
