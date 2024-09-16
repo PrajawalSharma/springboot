@@ -13,6 +13,10 @@ public interface AddRepository extends JpaRepository<Add, Integer> {
 	List<Add> findBySalary(Double salary);
 	List<Add> findBySalary(Double salary);
 	List<Add> findBySalary(Double salary);
+	List<Add> findBySalary(Double salary);
+	List<Add> findBySalary(Double salary);
+	List<Add> findBySalary(Double salary);
+	List<Add> findBySalary(Double salary);
 
 
 }
