@@ -22,4 +22,12 @@ public class Add {
 	private double salary;
 	private String department;
 	private int experience;
+	private String email;
+	private double salary;
+	private String department;
+	private int experience;
+	private String email;
+	private double salary;
+	private String department;
+	private int experience;
 }
