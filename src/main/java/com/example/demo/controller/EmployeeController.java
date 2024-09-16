@@ -56,4 +56,16 @@ public class EmployeeController {
 	}
 	
 
+	@PostMapping("/saveAdmin")
+	public ResponseEntity<EmployeeResponse> saveAdmin(@RequestBody Employee employee) {
+		EmployeeResponse esp = service.saveAdmin(employee);
+		return ResponseEntity.ok(esp);
+	}
+
+	@PostMapping("/saveAdmin")
+	public ResponseEntity<EmployeeResponse> saveAdmin(@RequestBody Employee employee) {
+		EmployeeResponse esp = service.saveAdmin(employee);
+		return ResponseEntity.ok(esp);
+	}
+
 }
