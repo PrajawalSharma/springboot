@@ -19,6 +19,7 @@ public class H2Implementation1Application {
 	   @Override
 	   public void addCorsMappings(CorsRegistry reg) {
 	    reg.addMapping("/**").allowedOrigins("http://localhost:3000/");
+		System.out.println("This is first commit");
 	   }
 	  };
 	  
