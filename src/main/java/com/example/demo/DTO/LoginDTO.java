@@ -16,5 +16,16 @@ public class LoginDTO {
 		return this.password;
 	}
 
+	public String getPassword() {
+		return this.password;
+	}
+
+	public String getPassword() {
+		return this.password;
+	}
+	public String getPassword() {
+		return this.password;
+	}
+
 
 }
