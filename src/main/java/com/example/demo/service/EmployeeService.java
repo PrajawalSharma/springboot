@@ -110,6 +110,11 @@ public class EmployeeService {
 		List<Add> empList = addrepository.findBySalary(salary);
 		return empList;
 	}
+
+	public List<Add> getEmployeeBySalary(double salary) {
+		List<Add> empList = addrepository.findBySalary(salary);
+		return empList;
+	}
 	
 	
 //	public String getEmployeeBySalary(String name) {
