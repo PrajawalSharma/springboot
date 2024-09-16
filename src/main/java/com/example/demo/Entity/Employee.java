@@ -21,7 +21,14 @@ public class Employee {
 	private String email;
 	private String password;
 	private Integer number;
+<<<<<<< HEAD
 	private String email;
 	private String password;
 	private Integer number;
+=======
+
+	private String password;
+	private Integer number;
+	
+>>>>>>> 4c4208d (Done the changes in employee entity)
 }
