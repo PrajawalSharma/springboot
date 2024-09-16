@@ -61,6 +61,12 @@ public class EmployeeService {
 		return new EmployeeResponse("New Employee Added Successfully", true);
 	}
 	
+	public EmployeeResponse saveEmployee(Add add) {
+		System.out.print(add);
+		addrepository.save(add);
+		return new EmployeeResponse("New Employee Added Successfully", true);
+	}
+
 	public LoginResponse loginCheck(LoginDTO login) {
 		Employee emp = repository.findByEmail(login.getEmail());
 		System.out.println(emp);
