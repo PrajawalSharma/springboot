@@ -68,4 +68,18 @@ public class EmployeeController {
 		return ResponseEntity.ok(esp);
 	}
 
+		
+	@PostMapping("/addEmployee")
+	public ResponseEntity<?> addEmployee(@RequestBody Add add) {
+		EmployeeResponse esp = service.saveEmployee(add);
+		return ResponseEntity.ok(esp);
+	}
+
+		
+	@PostMapping("/addEmployee")
+	public ResponseEntity<?> addEmployee(@RequestBody Add add) {
+		EmployeeResponse esp = service.saveEmployee(add);
+		return ResponseEntity.ok(esp);
+	}
+
 }
