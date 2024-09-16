@@ -21,4 +21,7 @@ public class Employee {
 	private String email;
 	private String password;
 	private Integer number;
+	private String email;
+	private String password;
+	private Integer number;
 }
