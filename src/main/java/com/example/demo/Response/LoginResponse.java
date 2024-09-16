@@ -13,4 +13,13 @@ public class LoginResponse {
         this.status = status;
     }
 
+    public LoginResponse(String message, Boolean status) {
+        this.message = message;
+        this.status = status;
+    }
+
+    public LoginResponse(String message, Boolean status) {
+        this.message = message;
+        this.status = status;
+    }
 }
