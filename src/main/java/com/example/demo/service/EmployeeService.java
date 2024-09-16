@@ -71,6 +71,30 @@ public class EmployeeService {
 			return new LoginResponse("Login failed", true);
 		}
 	}
+
+
+	public LoginResponse loginCheck(LoginDTO login) {
+		Employee emp = repository.findByEmail(login.getEmail());
+		System.out.println(emp);
+		if(emp.getPassword().equals(login.getPassword())) {
+		return new LoginResponse("Login Success", true);
+		}
+		else {
+			return new LoginResponse("Login failed", true);
+		}
+	}
+
+
+	public LoginResponse loginCheck(LoginDTO login) {
+		Employee emp = repository.findByEmail(login.getEmail());
+		System.out.println(emp);
+		if(emp.getPassword().equals(login.getPassword())) {
+		return new LoginResponse("Login Success", true);
+		}
+		else {
+			return new LoginResponse("Login failed", true);
+		}
+	}
 	
 	public List<Add> getEmployeeByName(String name) {
 		List<Add> empList = addrepository.findByName(name);

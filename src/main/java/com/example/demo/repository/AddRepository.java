@@ -11,6 +11,8 @@ public interface AddRepository extends JpaRepository<Add, Integer> {
 	
 	List<Add> findByName(String Name);
 	List<Add> findBySalary(Double salary);
+	List<Add> findBySalary(Double salary);
+	List<Add> findBySalary(Double salary);
 
 
 }
