@@ -11,6 +11,7 @@ public class LoginResponse {
    public LoginResponse(String message, Boolean status) {
         this.message = message;
         this.status = status;
+        this.status = status;
     }
 
     public LoginResponse(String message, Boolean status) {
