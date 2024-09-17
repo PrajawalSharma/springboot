@@ -7,6 +7,8 @@ public class LoginResponse {
 	
 	String message;
 	Boolean status;
+    String message;
+	Boolean status;
 	
    public LoginResponse(String message, Boolean status) {
         this.message = message;
