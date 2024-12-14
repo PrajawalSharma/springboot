@@ -145,4 +145,18 @@ public class EmployeeService {
 //	}
 //
 
+//	public String getEmployeeBySalary(String name) {
+//		System.out.print(name);
+//		addrepository.save(add);
+//		return " Check Employee added..";
+//	}
+//
+
+//	public String getEmployeeBySalary(String name) {
+//		System.out.print(name);
+//		addrepository.save(add);
+//		return " Check Employee added..";
+//	}
+//
+
 }

@@ -25,4 +25,9 @@ public class EmployeeResponse {
         this.status = status;
     }
 
+    public EmployeeResponse(String message, Boolean status) {
+        this.message = message;
+        this.status = status;
+    }
+
 }
